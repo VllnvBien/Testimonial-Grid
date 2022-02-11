@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 11px;
+    color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 0 15%;
+}
+
+.box {
+    border-radius: 8px;
+    padding: 32px;
+    position: relative;
+}
+
+.avatar {
+    border-radius: 100%;
+    float: left;
+    margin-right: 15px;
+    width: 30px;
+}
+
+.box1 {
+    background-color: var(--moderate-violet);
+    grid-column: span 2;
+}
+
+.quotation {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    width: 115px;
+}
+
+.box2 {
+    background-color: var(--very-dark-grayish-blue);
+} 
+
+.box3 {
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+    grid-column: 1;
+    grid-row: 2/3;
+}
+
+.box4 {
+    background-color: var(--very-dark-blackish-blue);
+    color: var(--light-grayish-blue);
+    grid-column: span 2;
+}
+
+.box5 {
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+    grid-column: 4;
+    grid-row: 1/3;
+}
+
+.box4 .statement2 {
+    color: var(--very-dark-grayish-blue);
+}
+
+.daniel, .patrick {
+    border: 2px solid hsl(263, 55%, 70%);
+}
+
+.statement1 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.statement2 {
+    color: var(--light-gray);
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+
+.verified {
+    color: var(--light-gray);
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1220px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attribution {
+        display: none;
+    }
+}

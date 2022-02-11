@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: var(--light-gray);
+    background-color: var(--light-grayish-blue);
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 11px;
     color: var(--light-grayish-blue);
